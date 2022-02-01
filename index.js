@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const jsonServer = require("json-server");
 const jwt = require("jsonwebtoken");
 
+const port = process.env.PORT || 3000;
+
 const server = jsonServer.create();
 const userdb = JSON.parse(fs.readFileSync("./users.json", "UTF-8"));
 
@@ -128,6 +130,6 @@ server.use(/^(?!\/auth).*$/, (req, res, next) => {
   }
 });
 
-server.listen(8000, () => {
+server.listen(port, () => {
   console.log("Run Auth API Server");
 });
