@@ -2,8 +2,8 @@
     "users": [
         {
             "id": 1,
-            "email": "double@.com",
-            "password": "Doubleit2021%"
+            "email": "test@.com",
+            "password": "123"
         }
     ]
 }
